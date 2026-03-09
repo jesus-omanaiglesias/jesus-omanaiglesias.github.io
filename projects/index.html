@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects · Your Name</title>
+    <meta name="description" content="Projects" />
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <h1><a href="/">Your Name</a></h1>
+          <p class="subtitle">Projects</p>
+        </div>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/updates/">Updates</a>
+          <a href="/publications/">Publications</a>
+          <a href="/projects/" aria-current="page">Projects</a>
+        </nav>
+      </header>
+
+      <main>
+        <p class="meta">A few projects you want people to remember. Link to code, demos, and artifacts.</p>
+
+        <ul class="list">
+          <li>
+            <div class="kicker">MEC</div>
+            <div>
+              <strong>Project name</strong> — one-line description of what it enables.
+              <span class="meta">(<a href="#">repo</a> · <a href="#">paper</a>)</span>
+            </div>
+          </li>
+          <li>
+            <div class="kicker">Sustainability</div>
+            <div>
+              <strong>Project name</strong> — one-line description.
+              <span class="meta">(<a href="#">repo</a>)</span>
+            </div>
+          </li>
+        </ul>
+      </main>
+
+      <footer>
+        <div>© <span id="year"></span> Your Name</div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
