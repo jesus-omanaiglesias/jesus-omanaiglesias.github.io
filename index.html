@@ -1,1 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name</title>
+    <meta name="description" content="Personal homepage" />
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <h1>Your Name</h1>
+          <p class="subtitle">Researcher • Systems • Mobile/Edge</p>
+        </div>
+        <nav>
+          <a href="/" aria-current="page">Home</a>
+          <a href="/updates/">Updates</a>
+          <a href="/publications/">Publications</a>
+          <a href="/projects/">Projects</a>
+        </nav>
+      </header>
 
+      <main>
+        <p>
+          Short bio goes here. A few lines about your interests and what you build/measure/optimize.
+          Keep it simple and readable.
+        </p>
+
+        <p class="meta">
+          Email: <a href="mailto:you@university.edu">you@university.edu</a> ·
+          <a href="https://scholar.google.com/">Google Scholar</a> ·
+          <a href="https://github.com/">GitHub</a> ·
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+        </p>
+
+        <h2>Focus</h2>
+        <p>
+          Measurement-driven systems research on sustainable mobile/edge infrastructure, mobility-aware MEC,
+          and carbon/energy-aware ML.
+        </p>
+
+        <h2>Selected</h2>
+        <ul class="list">
+          <li>
+            <div class="kicker">Talk</div>
+            <div>
+              <strong>Invited talk title</strong> — Venue, Year.
+              <span class="meta">(<a href="#">slides</a>)</span>
+            </div>
+          </li>
+          <li>
+            <div class="kicker">Paper</div>
+            <div>
+              <strong>Paper title</strong> — Conference, Year.
+              <span class="meta">(<a href="#">pdf</a>)</span>
+            </div>
+          </li>
+        </ul>
+      </main>
+
+      <footer>
+        <div>© <span id="year"></span> Your Name</div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
